@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.headline {
+  margin-left: 2.2em;
+  border: 1px solid pink;
+  border-radius: 10px;
+  font-size: large;
+  margin-top: -2.7em;
+  background-color: white;
+  width: 8.8em;
+  padding-left: 0.3em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-div {
+  padding-top: 2.2em;
+  margin: 2em;
+  background-color: rgb(241, 156, 157);
+  border-radius: 10px;
+  height: 8em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-div * {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.todo-input {
+  margin-bottom: 1.2em;
+}
+
+.submit-button {
+  margin-bottom: 0.7em;
+  margin-left: auto;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-container {
+  margin: 2em;
+  margin-top: -1.6em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-container * {
+  border-radius: 10px;
+  margin-bottom: 0.3em;
+}
+
+.undone-todo-item {
+  background-color: rgb(196, 238, 223);
+  padding: 0.2em 0em 2em 0.8em;
+  height: 7em;
+}
+
+.done-todo-item {
+  background-color: rgb(240, 240, 241);
+  padding: 0.2em 0em 2em 0.8em;
+  position: relative;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+}
+
+.done-todo-item > .todo-description,
+.done-todo-item > .todo-title {
+  text-decoration: line-through;
+}
+
+.remove-button {
+  margin-top: 1.7em;
+  margin-left: auto;
+  margin-right: 0.8em;
+  background-color: rgb(230, 67, 83);
+  color: white;
+  border: none;
+}
+
+.todo-title,
+.todo-description,
+.sub-heading {
+  pointer-events: none;
 }
