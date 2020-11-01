@@ -18,10 +18,7 @@ function App() {
       isDone: false,
       id: uuidv4().toString(),
     };
-
-    const newList = [...todoList];
-    newList.push(todo);
-    setTodoList(newList);
+    setTodoList([...todoList, todo]);
     setDescriptiton('');
     setTitle('');
   };

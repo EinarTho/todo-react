@@ -9,7 +9,7 @@ const TodoContainer = props => {
         title={todo.title}
         description={todo.description}
         id={todo.id}
-        onClick={toggleDone}
+        toggleDone={toggleDone}
         key={todo.id}
         isDone={todo.isDone}
         removeItem={removeItem}

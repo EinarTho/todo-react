@@ -2,12 +2,12 @@ import React from 'react';
 
 const Todo = props => {
   const {
-    title, description, id, onClick, isDone, removeItem,
+    title, description, id, toggleDone, isDone, removeItem,
   } = props;
   return (
-    <div
+    <section
       id={id}
-      onClick={onClick}
+      onClick={toggleDone}
       className={isDone ? 'done-todo-item' : 'undone-todo-item'}
     >
       <h2 className="todo-title">{title}</h2>
@@ -19,7 +19,7 @@ const Todo = props => {
       ) : (
         ''
       )}
-    </div>
+    </section>
   );
 };
 
