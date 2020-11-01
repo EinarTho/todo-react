@@ -13,7 +13,7 @@ const TodoForm = props => {
     <section>
       <div className="form-div">
         <p className="headline">Register New ToDo</p>
-        <form onSubmit={formSubmit}>
+        <form onSubmit={formSubmit} className="todo-form">
           <label htmlFor="title">Title</label>
           <input
             onChange={onChangeTitle}

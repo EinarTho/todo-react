@@ -1,5 +1,7 @@
 import './App.css';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 import TodoContainer from './components/TodoContainer';
 import TodoForm from './components/TodoForm';
 
@@ -14,7 +16,7 @@ function App() {
       title,
       description,
       isDone: false,
-      id: new Date().toLocaleTimeString().toString(),
+      id: uuidv4().toString(),
     };
 
     const newList = [...todoList];

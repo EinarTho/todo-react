@@ -10,8 +10,8 @@ const Todo = props => {
       onClick={onClick}
       className={isDone ? 'done-todo-item' : 'undone-todo-item'}
     >
-      <h2 className="todo-description">{title}</h2>
-      <p className="todo-title">{description}</p>
+      <h2 className="todo-title">{title}</h2>
+      <p className="todo-description">{description}</p>
       {isDone ? (
         <button onClick={removeItem} value={id} className="remove-button">
           Remove
